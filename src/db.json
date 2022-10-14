@@ -17,14 +17,14 @@
       "name": "Athletic shoes",
       "stock": 8,
       "price": 49.99,
-      "shoeimage": "../public/images/athletic.jpg",
+      "shoeimage": "athletic.jpg",
       "shortDesc": "Sneakers, have a rubber sole and canvas upper and are designed to be worn while doing physical activity",
       "description": "additional sole support to protect the feet against ground impact, and tennis shoes are specifically designed to be flexible for tennis players. High-tops extend up to the ankles and provide stability to basketball players."
     },
     {
       "id": "3dc7fiyzlfmkfqseqam",
       "name": "Ballet flats",
-      "shoeimage": "../public/images/athletic.jpg",
+      "shoeimage": "ballet.jpg",
       "stock": 19,
       "price": 99.99,
       "shortDesc": " An everyday version of the tradition slip-on ballet shoes which feature a rubber sole.",
@@ -33,7 +33,7 @@
     {
       "id": "aoe8wvdxvrkfqsew67",
       "name": "Boat shoes",
-      "shoeimage": "../public/images/athletic.jpg",
+      "shoeimage": "boat.jpg",
       "stock": 0,
       "price": 49.99,
       "shortDesc": "These canvas or leather slip-on shoes have rubber soles that feature a cut pattern to prevent slippage on wet decks.",
@@ -42,7 +42,7 @@
     {
       "id": "bmfrurdkswtkfqsf15j",
       "name": "Brogue shoes:",
-      "shoeimage": "../public/images/athletic.jpg",
+      "shoeimage": "brogues.jpg",
       "stock": 5,
       "price": 19.99,
       "shortDesc": "Are low-heeled shoe, loafer, or boot that features broguing, or hole perforations.",

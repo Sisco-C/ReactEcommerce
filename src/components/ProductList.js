@@ -1,9 +1,11 @@
 import React from "react";
 import ProductItem from "./ProductItem";
 import withContext from "../withContext";
+import db from '../db.json'
 
 const ProductList = props => {
-  const { products } = props.context;
+  // const { products } = props.context;
+  const { products } = db
 
   return (
     <>

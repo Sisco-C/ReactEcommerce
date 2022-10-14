@@ -9,8 +9,9 @@ const ProductItem = props => {
           <div className="media-left">
             <figure className="image is-64x64" >
               <img
-                src={"https://i.ibb.co/Dp4mTmr/athletic.jpg"}
-                alt={product.shortDesc}
+                src={product.shoeimage}
+                alt='Shoe'
+              // alt={product.shortDesc}
               />
             </figure>
           </div>
