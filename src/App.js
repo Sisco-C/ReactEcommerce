@@ -3,8 +3,7 @@ import { Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
 import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import "@material-ui/core";
-import { FcSearch } from 'react-icons/fc';
-import { products } from './db.json'
+// import { products } from './db.json'
 
 import AddProduct from './components/AddProduct';
 import Cart from './components/Cart';

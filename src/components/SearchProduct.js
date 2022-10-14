@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { products } from '../db.json'
 import ProductItem from './ProductItem';
 
@@ -16,8 +16,10 @@ const SearchProduct = (props) => {
             <div className="hero has-background-primary-dark">
                 <div className="hero-body container">
                     <h4 className="title"> Check out Our Shoe Collection!</h4>
-                    <input value={searchTerm} onKeyPress={e => setSearchTerm(e.target.value)} placeholder='Search Shoe' />
-                    <button onClick={() => handleSearch}>Search</button>
+                    <div style={{ display: 'none' }}>
+                        <input value={searchTerm} onKeyPress={e => setSearchTerm(e.target.value)} placeholder='Search Shoe' />
+                        <button onClick={() => handleSearch}>Search</button>
+                    </div>
                 </div>
             </div>
             <br />
