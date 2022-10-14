@@ -4,6 +4,7 @@ import CartItem from "./CartItem";
 
 const Cart = props => {
   const { cart } = props.context;
+  console.log(cart)
   const cartKeys = Object.keys(cart || {});
   return (
     <>

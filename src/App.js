@@ -4,6 +4,7 @@ import axios from 'axios';
 import jwt_decode from 'jwt-decode';
 import "@material-ui/core";
 import { FcSearch } from 'react-icons/fc';
+import { products } from './db.json'
 
 import AddProduct from './components/AddProduct';
 import Cart from './components/Cart';
@@ -11,13 +12,15 @@ import Login from './components/Login';
 import ProductList from './components/ProductList';
 import Context from "./Context";
 import Promotions from "./components/Promotions";
+import SearchProduct from "./components/SearchProduct";
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       user: null,
       cart: {},
-      products: []
+      products: [],
+      searchProductName: ''
     };
     this.routerRef = React.createRef();
   }
@@ -193,15 +196,24 @@ export default class App extends Component {
                 )}
                 <Link to="/promotions" className="navbar-item">
                   Promotions
+                </Link>
+                {/* <FcSearch style={{ borderWidth: 0, width: 20, alignItems: 'center', alignSelf: 'center', marginRight: -25 }} /> */}
+                <Link to='/search'>
 
-
+                  <input className="navbar-item has-background-primary "
+                    placeholder="Search for Shoes!"
+                    style={{
+                      borderWidth: 0, width: 500, alignItems: 'center',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      borderRadius: 10, marginLeft: 22,
+                      marginTop: 10
+                    }} />
 
                 </Link>
-                <FcSearch style={{ borderWidth: 0, width: 20, alignItems: 'center', alignSelf: 'center', marginRight: -25 }} />
-
-                <input className="navbar-item has-background-primary " placeholder="Search for Shoes!" style={{ borderWidth: 0, width: 500, alignSelf: 'center', display: 'flex', justifyContent: 'right', borderRadius: 10, height: 25, alignItems: 'center', marginLeft: 22 }}></input>
-
-
+                {/* {this.state.searchProductName && (
+                  <SearchProduct productName={this.state.searchProductName} />
+                )} */}
               </div>
             </nav>
             <Switch>
@@ -211,6 +223,7 @@ export default class App extends Component {
               <Route exact path="/add-product" component={AddProduct} />
               <Route exact path="/products" component={ProductList} />
               <Route exact path="/promotions" component={Promotions} />
+              <Route exact path='/search' component={SearchProduct} />
 
 
             </Switch>
